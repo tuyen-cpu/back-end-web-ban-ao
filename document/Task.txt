@@ -1,0 +1,12 @@
+Tuần này, 4/5 - 10/5
+
+*Ha
+//Xem chi tiết 1 sp
+//Load danh mục
+
+*Tuyen
+//Load dia chi 
+//Load don hang
+	
+//Câp nhật thêm giao diện
+
