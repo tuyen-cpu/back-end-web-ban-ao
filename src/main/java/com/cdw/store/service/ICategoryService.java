@@ -12,7 +12,7 @@ public interface ICategoryService {
 	
 	List<CategoryDto> findAll();
 
-	Page<CategoryDto> getCategoriesInAdmin(Integer page, Integer size);
+	Page<CategoryDto> getCategoriesInAdmin(Integer page, Integer size, String status);
 
 	boolean updateStatus(Long[] id, String status);
 
