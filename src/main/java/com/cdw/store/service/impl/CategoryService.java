@@ -41,9 +41,14 @@ public class CategoryService implements ICategoryService{
 	}
 
 	@Override
-	public Page<CategoryDto> getCategoriesInAdmin(Integer page, Integer size) {
+	public Page<CategoryDto> getCategoriesInAdmin(Integer page, Integer size , String status) {
 		Pageable pageable = PageRequest.of(page, size, Sort.by("id").ascending());
-		Page<Category> categories = categoryRepo.findAll(pageable);
+		Page<Category> categories=null;
+		if(status.equals("Active")){
+			categories = categoryRepo.findAllByStatus(pageable,status);
+		}else{
+			categories = categoryRepo.findAll(pageable);
+		}
 		Page<CategoryDto> results = categories.map(new Function<Category, CategoryDto>() {
 			@Override
 			public CategoryDto apply(Category entity) {

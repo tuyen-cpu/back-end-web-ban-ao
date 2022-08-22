@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.cdw.store.model.ResponseObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -27,17 +28,22 @@ public class FileUploadController {
     private IStorageService storageService;
 
     @PostMapping("")
-    public ResponseEntity<List<String>> uploadFile(@RequestParam("file")MultipartFile[] file){
+    public ResponseEntity<ResponseObject> uploadFile(@RequestParam("file")MultipartFile[] file){
+        System.out.println("giù v");
       List<String> listImage = new ArrayList<>();
         try{
             for(int i=0;i<file.length;i++){
-                String generatedFileName = storageService.storeFile(file[i]);
-                listImage.add(generatedFileName);
+
+                    String generatedFileName = storageService.storeFile(file[i]);
+                    listImage.add(generatedFileName);
+
             }
 
-            return new ResponseEntity<>(listImage, HttpStatus.OK);
+            return new ResponseEntity<>(new ResponseObject("ok","Add image success!",listImage), HttpStatus.OK);
+
         }catch(Exception e){
-            return new ResponseEntity<>(listImage, HttpStatus.NOT_IMPLEMENTED);
+            return new ResponseEntity<>(new ResponseObject("failed",e.getMessage(),""), HttpStatus.NOT_IMPLEMENTED);
+
         }
     }
     @GetMapping("/files/{fileName:.+}")

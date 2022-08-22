@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 import com.cdw.store.dto.ProductAddDto;
 import com.cdw.store.model.Filter;
 import com.cdw.store.model.QueryOperator;
+import com.cdw.store.model.ResponseObject;
 import com.cdw.store.repo.ProductRepo;
 import com.cdw.store.repo.specs.ProductSpecification;
 import com.cdw.store.utils.ProductConverter;
@@ -144,17 +145,35 @@ ProductConverter productConverter;
 	}
 
 	@PostMapping("/add")
-	public ResponseEntity<ProductDto> addProduct(@RequestBody ProductAddDto productAddDto){
+	public ResponseEntity<ResponseObject> addProduct(@RequestBody ProductAddDto productAddDto){
 
-		ProductDto newProduct = productService.addProduct(productAddDto);
+		if(!productService.existsByGroupProductIdAndSizeId(productAddDto.getGroupProductId(),productAddDto.getSizeId())){
+			ProductDto newProduct = productService.addProduct(productAddDto);
+			return new ResponseEntity<>(new ResponseObject("ok","Add product success!",newProduct),HttpStatus.OK);
+		}else{
+			return new ResponseEntity<>(new ResponseObject("failed","Duplicate size!",""),HttpStatus.BAD_REQUEST);
+		}
 
-		return new ResponseEntity<ProductDto>(newProduct, HttpStatus.CREATED);
 	}
 
 	@PutMapping("/update")
-	public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductAddDto productAddDto){
-		 ProductDto product= productService.addProduct(productAddDto);
-		return new ResponseEntity<>(product, HttpStatus.OK);
+	public ResponseEntity<ResponseObject> updateProduct(@RequestBody ProductAddDto productAddDto){
+
+			ProductDto productDto=productService.getProductById(productAddDto.getId());
+			if(Objects.equals(productDto.getGroupProductId(), productAddDto.getGroupProductId()) && Objects.equals(productDto.getSizeId(), productAddDto.getSizeId())){
+				ProductDto product= productService.addProduct(productAddDto);
+				return new ResponseEntity<>(new ResponseObject("ok","Add product success!",product),HttpStatus.OK);
+
+			}else if(productService.existsByGroupProductIdAndSizeId(productAddDto.getGroupProductId(),productAddDto.getSizeId())){
+				return new ResponseEntity<>(new ResponseObject("failed","Duplicate size!",""),HttpStatus.BAD_REQUEST);
+
+			}
+			else{
+				ProductDto product= productService.addProduct(productAddDto);
+				return new ResponseEntity<>(new ResponseObject("ok","Add product success!",product),HttpStatus.OK);
+
+			}
+
 	}
 
 	@DeleteMapping("/delete/{id}")
@@ -174,6 +193,7 @@ ProductConverter productConverter;
 		String desc = productService.getLongDescription(id);
 		return new ResponseEntity<String>(desc, HttpStatus.OK);
 	}
+
 
 
 

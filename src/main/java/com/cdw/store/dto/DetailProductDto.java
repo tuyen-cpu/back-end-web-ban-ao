@@ -14,6 +14,7 @@ public class DetailProductDto {
 	private Long price;
 	private Integer discount;
 	private Long quantity;
+	private String size;
 	private String[] description;
 	private String[] promotion;
 	private String[] urlImgs;

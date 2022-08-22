@@ -80,6 +80,11 @@ public class ProductService implements IProductService {
 	}
 
 	@Override
+	public ProductDto getProductById(Long id) {
+		return productConverter.convertToDto(productRepo.getById(id));
+	}
+
+	@Override
 	public List<ProductDto> searchProducts(String key) {
 		return productRepo.search(key).stream().map(productEntity->productConverter.convertToDto(productEntity)).collect(Collectors.toList());
 	}
@@ -124,6 +129,16 @@ public class ProductService implements IProductService {
 	@Override
 	public List<ProductDto> test() {
 		return productRepo.findAll().stream().map(productEntity->productConverter.convertToDto(productEntity)).collect(Collectors.toList());
+	}
+
+	@Override
+	public boolean existsByGroupProductIdAndSizeId(Long groupProductId, Long sizeId) {
+		return productRepo.existsByGroupProductIdAndSizeId(groupProductId, sizeId);
+	}
+
+	@Override
+	public boolean existsById(Long id) {
+		return productRepo.existsById(id);
 	}
 
 

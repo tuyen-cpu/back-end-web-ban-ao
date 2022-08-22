@@ -32,7 +32,7 @@ public class ImageStorageService implements IStorageService {
     }
     private boolean isImageFile(MultipartFile file){
         String fileExtension = FilenameUtils.getExtension(file.getOriginalFilename());
-        return Arrays.asList(new String[]{"png","jpg","jpeg","bmp"}).contains(fileExtension.trim().toLowerCase());
+        return Arrays.asList(new String[]{"png","jpg","jpeg","bmp","webp"}).contains(fileExtension.trim().toLowerCase());
     }
     @Override
     public String storeFile(MultipartFile file) {
