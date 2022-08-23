@@ -92,11 +92,11 @@ ProductConverter productConverter;
 	}
 
 	
-	@GetMapping("/{id}/price")
-	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
-		Long price = productService.getOutputPriceProductById(id); //include: price-discount
-		return new ResponseEntity<Long>(price, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/price")
+//	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
+//		Long price = productService.getOutputPriceProductById(id); //include: price-discount
+//		return new ResponseEntity<Long>(price, HttpStatus.OK);
+//	}
 	
 	private String convertWithoutUnderStoke(String str){
 		return str.split("_")[0];
@@ -188,11 +188,11 @@ ProductConverter productConverter;
 		Long quantity = productService.getQuantityProductByProductId(id);
 		return new ResponseEntity<Long>(quantity, HttpStatus.OK);
 	}
-	@GetMapping("/{id}/description")
-	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
-		String desc = productService.getLongDescription(id);
-		return new ResponseEntity<String>(desc, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/description")
+//	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
+//		String desc = productService.getLongDescription(id);
+//		return new ResponseEntity<String>(desc, HttpStatus.OK);
+//	}
 
 
 

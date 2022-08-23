@@ -28,9 +28,9 @@ public interface IProductService {
 
 	 Long getQuantityProductByProductId (Long id);
 
-	 Long getOutputPriceProductById (Long id);
+//	 Long getOutputPriceProductById (Long id);
 
-	 String getLongDescription(Long id);
+//	 String getLongDescription(Long id);
 	void updateProduct(ProductAddDto productAddDto);
 	 List<ProductDto> test();
 

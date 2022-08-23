@@ -33,18 +33,16 @@ public class ProductConverter {
 		ProductDto dto= new ProductDto();
 		dto.setId(entity.getId());
 		dto.setGroupProductId(entity.getGroupProduct().getId());
-		dto.setName(entity.getGroupProduct().getName());
-		dto.setDesc(entity.getSummary());
+//		dto.setName(entity.getGroupProduct().getName());
 		dto.setPrice(entity.getPrice());
 		dto.setSizeName(entity.getSize().getName());
-		dto.setCategoryId(entity.getCategory().getId());
+//		dto.setCategoryId(entity.getCategory().getId());
 		dto.setSizeId(entity.getSize().getId());
 		dto.setQuantity(entity.getQuantity());
-		dto.setDiscount(entity.getDiscount());
 		dto.setStatus(entity.getStatus());
-		if(entity.getImages().size()>0){
-			dto.setUrlImg(entity.getImages().get(0).getLink());
-		}
+//		if(entity.getImages().size()>0){
+//			dto.setUrlImg(entity.getImages().get(0).getLink());
+//		}
 
 		return dto;
 	}
@@ -54,7 +52,6 @@ public class ProductConverter {
 		dto.setId(entity.getId());
 		dto.setPrice(entity.getPrice());
 		dto.setQuantity(dto.getQuantity());
-		dto.setDiscount(entity.getDiscount());
 		dto.setQuantity(entity.getQuantity());
 		dto.setSize(entity.getSize().getName());
 		//get brand
@@ -67,30 +64,30 @@ public class ProductConverter {
 //		}
 		dto.setBrand(brand);
 		
-		List<Image> imgs = entity.getImages();
-		if(imgs!=null && imgs.size()>0) {
-			List<String> urlImgs = new ArrayList<String>();
-			imgs.stream().forEach(img->{
-				urlImgs.add(img.getLink());
-			});
-			String urls[] = urlImgs.toArray(new String[urlImgs.size()]);
-			dto.setUrlImgs(urls);
-		}
+//		List<Image> imgs = entity.getImages();
+//		if(imgs!=null && imgs.size()>0) {
+//			List<String> urlImgs = new ArrayList<String>();
+//			imgs.stream().forEach(img->{
+//				urlImgs.add(img.getLink());
+//			});
+//			String urls[] = urlImgs.toArray(new String[urlImgs.size()]);
+//			dto.setUrlImgs(urls);
+//		}
 		
-		String summary = entity.getSummary();
-		if(summary!=null && summary!="") {
-			String[] description= summary.split(";");
-			dto.setDescription(description);
-		}
-		
-		String promotion = entity.getPromotion();
-		if(promotion!=null && promotion!="") {
-			String[] promotions= promotion.split(";");
-			dto.setPromotion(promotions);
-		}
-		
-		dto.setDescription_full(entity.getLongDescription());
-		dto.setDescription_short(entity.getShortDescription());
+//		String summary = entity.getSummary();
+//		if(summary!=null && summary!="") {
+//			String[] description= summary.split(";");
+//			dto.setDescription(description);
+//		}
+//
+//		String promotion = entity.getPromotion();
+//		if(promotion!=null && promotion!="") {
+//			String[] promotions= promotion.split(";");
+//			dto.setPromotion(promotions);
+//		}
+//
+//		dto.setDescription_full(entity.getLongDescription());
+//		dto.setDescription_short(entity.getShortDescription());
 		return dto;
 	}
 	public Product convertAddProductToEntity(ProductAddDto productAddDto){

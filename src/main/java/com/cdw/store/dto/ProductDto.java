@@ -13,14 +13,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class ProductDto implements Serializable {
 	private Long id;
-	private String name;
-	private String desc;
 	private Long quantity;
 	private Long price;
 	private String sizeName;
 	private Long sizeId;
-	private Long categoryId;
-	private Integer discount;
 	private String urlImg;
 	private Integer status;
 	private Long groupProductId;

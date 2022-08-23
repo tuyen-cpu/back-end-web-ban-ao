@@ -11,4 +11,9 @@ import lombok.NoArgsConstructor;
 public class GroupProductDto {
     private Long id;
     private String name;
+    private String description;
+    private Integer discount;
+    private String urlImage;
+    private Integer status;
+    private Long categoryId;
 }

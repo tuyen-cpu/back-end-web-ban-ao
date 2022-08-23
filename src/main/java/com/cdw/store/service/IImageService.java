@@ -6,7 +6,9 @@ import com.cdw.store.model.Image;
 import java.util.List;
 
 public interface IImageService {
-    public List<ImageDto> findImageByProductId(Long id);
-    public ImageDto addImage(ImageDto imageDto);
-    public void deleteImage(Long id);
+    public List<ImageDto> findImageByGroupProductId(Long id);
+     ImageDto addImage(ImageDto imageDto);
+     void deleteImage(Long id);
+     ImageDto getImageTopByGroupProductId(Long id);
+
 }
