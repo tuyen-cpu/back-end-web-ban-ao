@@ -34,7 +34,7 @@ public interface ProductRepo extends JpaRepository<Product, Long>, JpaSpecificat
 //	Long getOutputPriceProductByProductId(Long id);
 //    @Query("Select distinct p.longDescription from Product p  where p.id = :id")
 //    String getLongDescriptionById(Long id);
-
+List<Product> findByGroupProductId(Long id);
     Boolean existsByGroupProductIdAndSizeId(Long groupProductId, Long sizeId);
 
 }

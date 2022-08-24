@@ -8,4 +8,7 @@ public interface IGroupProductService {
     Page<GroupProductDto> getAllGroupProduct(Integer page, Integer size);
     GroupProductDto addGroupProduct(GroupProductDto groupProductDto);
     GroupProductDto getById(Long id);
+
+    boolean updateStatus(Long id, Integer status);
+
 }

@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Data
 @NoArgsConstructor
@@ -16,4 +18,5 @@ public class GroupProductDto {
     private String urlImage;
     private Integer status;
     private Long categoryId;
+    private List<ProductDto> products;
 }

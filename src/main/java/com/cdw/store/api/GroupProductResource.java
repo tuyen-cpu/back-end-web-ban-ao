@@ -56,4 +56,16 @@ public class GroupProductResource {
       }
 
     }
+    @GetMapping("update-status")
+    public ResponseEntity<ResponseObject> addGroupProduct(@RequestParam Long id ,@RequestParam Integer status) {
+        try{
+          boolean result = groupProductService.updateStatus(id,status);
+            return new ResponseEntity<ResponseObject>(new ResponseObject("ok","Add group product success!",result), HttpStatus.OK);
+
+        }catch (Exception e){
+            return new ResponseEntity<ResponseObject>(new ResponseObject("failed",e.getMessage(),""), HttpStatus.BAD_REQUEST);
+
+        }
+
+    }
 }

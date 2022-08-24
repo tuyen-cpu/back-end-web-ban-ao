@@ -1,6 +1,7 @@
 package com.cdw.store.service.impl;
 
 import com.cdw.store.dto.GroupProductDto;
+import com.cdw.store.model.Category;
 import com.cdw.store.model.GroupProduct;
 import com.cdw.store.repo.GroupProductRepo;
 import com.cdw.store.service.IGroupProductService;
@@ -37,5 +38,19 @@ public class GroupProductService implements IGroupProductService {
         Optional<GroupProduct> gr = Optional.ofNullable(productGroupRepo.findById(id).orElseThrow(() -> new RuntimeException(("Group product " + id + " not found!"))));
         return groupProductConverter.convertToDto(gr.get());
 
+    }
+
+    @Override
+    public boolean updateStatus(Long id, Integer status) {
+        System.out.println("ở đây");
+        Optional<GroupProduct> entity = productGroupRepo.findById(id);
+        System.out.println("đây nữa");
+        if(entity.isPresent()) {
+            entity.get().setStatus(status);
+            productGroupRepo.save(entity.get());
+            System.out.println("OK");
+            return true;
+        }
+        return false;
     }
 }

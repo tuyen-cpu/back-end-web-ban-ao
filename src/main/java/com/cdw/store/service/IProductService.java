@@ -36,4 +36,6 @@ public interface IProductService {
 
 	boolean existsByGroupProductIdAndSizeId(Long groupProductId,Long sizeId);
 	boolean existsById(Long id);
+
+	List<ProductDto> getByGroupProductId(Long id);
 }

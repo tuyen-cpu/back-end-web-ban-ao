@@ -32,6 +32,9 @@ public class GroupProduct {
     @JsonIgnore
     @OneToMany(mappedBy = "groupProduct", cascade = CascadeType.ALL)
     private List<Image> images = new ArrayList<>();
+    @JsonIgnore
+    @OneToMany(mappedBy = "groupProduct", cascade = CascadeType.ALL)
+    private List<Product> products = new ArrayList<>();
 
     @Override
     public boolean equals(Object o) {

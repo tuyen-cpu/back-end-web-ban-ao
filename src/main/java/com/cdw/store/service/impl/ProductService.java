@@ -141,5 +141,10 @@ public class ProductService implements IProductService {
 		return productRepo.existsById(id);
 	}
 
+	@Override
+	public List<ProductDto> getByGroupProductId(Long id) {
+		return productRepo.findByGroupProductId(id).stream().map(entity->productConverter.convertToDto(entity)).collect(Collectors.toList());
+	}
+
 
 }

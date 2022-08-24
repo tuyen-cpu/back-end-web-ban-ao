@@ -9,10 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
+import java.util.stream.Collectors;
+
 @Service
 public class GroupProductConverter {
     @Autowired
     private ModelMapper modelMapper;
+    @Autowired
+    private ProductConverter productConverter;
     public Page<GroupProductDto> convertToDto(Page<GroupProduct> pageEntity){
         if (pageEntity == null) {
             return null;
@@ -27,6 +31,8 @@ public class GroupProductConverter {
         groupProductDto.setDiscount(entity.getDiscount());
         groupProductDto.setStatus(entity.getStatus());
         groupProductDto.setCategoryId(entity.getCategory().getId());
+        System.out.println(entity.getProducts().size());
+        groupProductDto.setProducts(entity.getProducts().stream().map(e->productConverter.convertToDto(e)).collect(Collectors.toList()));
         if(entity.getImages().size()>0){
             groupProductDto.setUrlImage(entity.getImages().get(0).getLink());
         }

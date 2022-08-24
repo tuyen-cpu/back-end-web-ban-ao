@@ -46,9 +46,16 @@ ProductConverter productConverter;
 		List<ProductDto> products = productService.searchProducts(key);
 		return new ResponseEntity<List<ProductDto>>(products, HttpStatus.OK);
 	}
-	@GetMapping("/things")
-	public ResponseEntity getThings(@RequestParam("filter") String[] filters) {
-		return ResponseEntity.ok(filters);
+	@GetMapping("/group-product/{id}")
+	public ResponseEntity<ResponseObject> getByGroupProductId(@PathVariable("id") Long id) {
+try{
+	List<ProductDto> results = productService.getByGroupProductId(id);
+	return new ResponseEntity<>(new ResponseObject("ok","Get product of group product id:"+id+" success!",results),HttpStatus.OK);
+
+}catch (Exception e){
+	return new ResponseEntity<>(new ResponseObject("ok",e.getMessage(),""),HttpStatus.OK);
+}
+
 	}
 	@GetMapping("/all")
 	public ResponseEntity<Map<String, Object>> searchProducts(@RequestParam(required = false) String q,
