@@ -41,8 +41,8 @@ public class CategoryResource {
 
 	@GetMapping("/all/admin")
 	public ResponseEntity<Page<CategoryDto>> getAllCategoriesInAdmin(@RequestParam Integer page,
-			@RequestParam Integer size) {
-		Page<CategoryDto> categories = categoryService.getCategoriesInAdmin(page, size);
+			@RequestParam Integer size,@RequestParam String status) {
+		Page<CategoryDto> categories = categoryService.getCategoriesInAdmin(page, size,status);
 		return new ResponseEntity<Page<CategoryDto>>(categories, HttpStatus.OK);
 	}
 

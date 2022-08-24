@@ -36,6 +36,9 @@ public class ProductConverter {
 		dto.setName(entity.getGroupProduct().getName());
 		dto.setDesc(entity.getSummary());
 		dto.setPrice(entity.getPrice());
+		dto.setSizeName(entity.getSize().getName());
+		dto.setCategoryId(entity.getCategory().getId());
+		dto.setSizeId(entity.getSize().getId());
 		dto.setQuantity(entity.getQuantity());
 		dto.setDiscount(entity.getDiscount());
 		dto.setStatus(entity.getStatus());
@@ -53,7 +56,7 @@ public class ProductConverter {
 		dto.setQuantity(dto.getQuantity());
 		dto.setDiscount(entity.getDiscount());
 		dto.setQuantity(entity.getQuantity());
-		
+		dto.setSize(entity.getSize().getName());
 		//get brand
 		String brand = "";
 //		List<Attribute> attributes = entity.getAttributes();
