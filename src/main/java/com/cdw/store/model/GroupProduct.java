@@ -22,6 +22,7 @@ public class GroupProduct {
     @Column(name="id")
     private Long id;
     private String name;
+    private Long price;
     private String description;
     private Integer discount; // % giam
     private Integer status; //0 hidden 1:show
@@ -50,4 +51,5 @@ public class GroupProduct {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }

@@ -13,6 +13,7 @@ import java.util.List;
 public class GroupProductDto {
     private Long id;
     private String name;
+    private Long price;
     private String description;
     private Integer discount;
     private String urlImage;

@@ -33,16 +33,16 @@ public class ProductConverter {
 		ProductDto dto= new ProductDto();
 		dto.setId(entity.getId());
 		dto.setGroupProductId(entity.getGroupProduct().getId());
-//		dto.setName(entity.getGroupProduct().getName());
+		dto.setName(entity.getGroupProduct().getName());
 		dto.setPrice(entity.getPrice());
 		dto.setSizeName(entity.getSize().getName());
 //		dto.setCategoryId(entity.getCategory().getId());
 		dto.setSizeId(entity.getSize().getId());
 		dto.setQuantity(entity.getQuantity());
 		dto.setStatus(entity.getStatus());
-//		if(entity.getImages().size()>0){
-//			dto.setUrlImg(entity.getImages().get(0).getLink());
-//		}
+		if(entity.getGroupProduct().getImages().size()>0){
+			dto.setUrlImg(entity.getGroupProduct().getImages().get(0).getLink());
+		}
 
 		return dto;
 	}

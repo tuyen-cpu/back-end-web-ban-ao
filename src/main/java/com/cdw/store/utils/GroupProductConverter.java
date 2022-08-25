@@ -28,12 +28,14 @@ public class GroupProductConverter {
         groupProductDto.setId(entity.getId());
         groupProductDto.setName(entity.getName());
         groupProductDto.setDescription(entity.getDescription());
+        groupProductDto.setPrice(entity.getPrice());
         groupProductDto.setDiscount(entity.getDiscount());
         groupProductDto.setStatus(entity.getStatus());
         groupProductDto.setCategoryId(entity.getCategory().getId());
-        System.out.println(entity.getProducts().size());
-        groupProductDto.setProducts(entity.getProducts().stream().map(e->productConverter.convertToDto(e)).collect(Collectors.toList()));
-        if(entity.getImages().size()>0){
+        if(entity.getProducts()!=null&&entity.getProducts().size()>0){
+            groupProductDto.setProducts(entity.getProducts().stream().map(e->productConverter.convertToDto(e)).collect(Collectors.toList()));
+        }
+        if(entity.getImages()!=null&&entity.getImages().size()>0){
             groupProductDto.setUrlImage(entity.getImages().get(0).getLink());
         }
         return groupProductDto;
