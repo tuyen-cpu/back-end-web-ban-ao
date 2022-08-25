@@ -2,6 +2,7 @@ package com.cdw.store.api;
 
 import com.cdw.store.dto.CategoryDto;
 import com.cdw.store.dto.SizeDto;
+import com.cdw.store.model.ResponseObject;
 import com.cdw.store.service.ISizeService;
 import com.cdw.store.service.impl.SizeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,16 @@ public class SizeResource {
     @Autowired
     private ISizeService sizeService;
     @GetMapping("/all")
-    public ResponseEntity<Page<SizeDto>> getAllSize(@RequestParam Integer page,
-                                                    @RequestParam Integer size){
-        Page<SizeDto> sizes = sizeService.getAllSize(page, size);
-        return new ResponseEntity<>(sizes, HttpStatus.OK);
+    public ResponseEntity<ResponseObject> getAllSize(@RequestParam Integer page,
+                                                     @RequestParam Integer size){
+        try{
+            Page<SizeDto> sizes = sizeService.getAllSize(page, size);
+            return new ResponseEntity<>(new ResponseObject("ok","Get sizes success!",sizes), HttpStatus.OK);
+
+        }catch (Exception e){
+            return new ResponseEntity<>(new ResponseObject("failed",e.getMessage(),""), HttpStatus.BAD_REQUEST);
+
+        }
+
     }
 }

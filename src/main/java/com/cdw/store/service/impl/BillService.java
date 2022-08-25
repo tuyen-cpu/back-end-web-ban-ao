@@ -139,12 +139,12 @@ public class BillService implements IBillService {
 			detailDto.setPrice(item.getPrice());
 			detailDto.setQuantity(item.getQuantity());
 			
-			Image img = imageRepo.findTopByProductId(item.getId());
-			if(img!=null) {
-				detailDto.setImg(img.getLink());
-			}else {
-				detailDto.setImg("image.jpg");
-			}
+//			Image img = imageRepo.findTopByProductId(item.getId());
+//			if(img!=null) {
+//				detailDto.setImg(img.getLink());
+//			}else {
+//				detailDto.setImg("image.jpg");
+//			}
 			return detailDto;
 		}).collect(Collectors.toList());
 		dto.setOrderDetails(orderDetailDtos);
