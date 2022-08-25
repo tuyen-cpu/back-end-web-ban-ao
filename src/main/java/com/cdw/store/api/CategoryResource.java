@@ -3,6 +3,7 @@ package com.cdw.store.api;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.cdw.store.model.ResponseObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -23,7 +24,19 @@ import com.cdw.store.service.ICategoryService;
 public class CategoryResource {
 	@Autowired
 	private ICategoryService categoryService;
+	@GetMapping("/all")
+	public ResponseEntity<ResponseObject> getAll() {
+		try{
+			List<CategoryDto> categories = categoryService.findAll();
+			return new ResponseEntity<ResponseObject>(new ResponseObject("ok","Get category success!",categories), HttpStatus.OK);
 
+		}catch (Exception e){
+			return new ResponseEntity<ResponseObject>(new ResponseObject("failed",e.getMessage(),""), HttpStatus.OK);
+
+		}
+
+
+	}
 	@GetMapping("/menu")
 	public ResponseEntity<List<MenuDto>> loadMenu() {
 		List<MenuDto> menus = new ArrayList<MenuDto>();
@@ -41,8 +54,8 @@ public class CategoryResource {
 
 	@GetMapping("/all/admin")
 	public ResponseEntity<Page<CategoryDto>> getAllCategoriesInAdmin(@RequestParam Integer page,
-			@RequestParam Integer size) {
-		Page<CategoryDto> categories = categoryService.getCategoriesInAdmin(page, size);
+			@RequestParam Integer size,@RequestParam String status) {
+		Page<CategoryDto> categories = categoryService.getCategoriesInAdmin(page, size,status);
 		return new ResponseEntity<Page<CategoryDto>>(categories, HttpStatus.OK);
 	}
 

@@ -11,25 +11,31 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface IProductService {
-	public ProductDto addProduct(ProductAddDto productAddDto);
+	 ProductDto addProduct(ProductAddDto productAddDto);
 
-	public List<ProductDto> findALlProducts();
+	 List<ProductDto> findALlProducts();
 
-	public ProductDto updateProduct(ProductDto productDto);
+	 ProductDto updateProduct(ProductDto productDto);
 
-	public void deleteProduct(Long id);
+	 void deleteProduct(Long id);
 
-	public DetailProductDto findProductById(Long id);
-	public List<ProductDto> searchProducts(String key);
-	public Page<ProductDto>searchAndPaging(String q,Pageable  paging);
+	 DetailProductDto findProductById(Long id);
+	ProductDto getProductById(Long id);
+	 List<ProductDto> searchProducts(String key);
+	 Page<ProductDto>searchAndPaging(String q,Pageable  paging);
 //	public Page<ProductDto>findByCategoryId(Long id,Pageable  paging);
-	public Page<ProductDto>findAll(Pageable  paging);
+	 Page<ProductDto>findAll(Pageable  paging);
 
-	public Long getQuantityProductByProductId (Long id);
+	 Long getQuantityProductByProductId (Long id);
 
-	public Long getOutputPriceProductById (Long id);
+//	 Long getOutputPriceProductById (Long id);
 
-	public String getLongDescription(Long id);
+//	 String getLongDescription(Long id);
 	void updateProduct(ProductAddDto productAddDto);
-	public List<ProductDto> test();
+	 List<ProductDto> test();
+
+	boolean existsByGroupProductIdAndSizeId(Long groupProductId,Long sizeId);
+	boolean existsById(Long id);
+
+	List<ProductDto> getByGroupProductId(Long id);
 }

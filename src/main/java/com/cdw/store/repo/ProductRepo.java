@@ -1,5 +1,6 @@
 package com.cdw.store.repo;
 
+import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -29,10 +30,11 @@ public interface ProductRepo extends JpaRepository<Product, Long>, JpaSpecificat
 	@Query("SELECT p.quantity FROM Product p WHERE p.id = :id")
 	Long getQuantityProductByProductId(@Param("id") Long id);
 	
-	@Query("SELECT p.price-(p.price*(p.discount/100)) FROM Product p WHERE p.id = :id")
-	Long getOutputPriceProductByProductId(Long id);
-    @Query("Select distinct p.longDescription from Product p  where p.id = :id")
-    String getLongDescriptionById(Long id);
-
+//	@Query("SELECT p.price-(p.price*(p.discount/100)) FROM Product p WHERE p.id = :id")
+//	Long getOutputPriceProductByProductId(Long id);
+//    @Query("Select distinct p.longDescription from Product p  where p.id = :id")
+//    String getLongDescriptionById(Long id);
+List<Product> findByGroupProductId(Long id);
+    Boolean existsByGroupProductIdAndSizeId(Long groupProductId, Long sizeId);
 
 }

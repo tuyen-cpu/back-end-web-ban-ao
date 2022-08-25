@@ -18,8 +18,8 @@ public class ImageService implements IImageService {
     @Autowired
     ImageConverter imageConverter;
     @Override
-    public List<ImageDto> findImageByProductId(Long id) {
-    return imageRepo.findImageByProductId(id).stream().map(productEntity->imageConverter.convertToDto(productEntity)).collect(Collectors.toList());
+    public List<ImageDto> findImageByGroupProductId(Long id) {
+    return imageRepo.findImageByGroupProductId(id).stream().map(productEntity->imageConverter.convertToDto(productEntity)).collect(Collectors.toList());
 
     }
 
@@ -32,5 +32,10 @@ public class ImageService implements IImageService {
     @Override
     public void deleteImage(Long id) {
       imageRepo.deleteById(id);
+    }
+
+    @Override
+    public ImageDto getImageTopByGroupProductId(Long id) {
+        return imageConverter.convertToDto(imageRepo.findTopByGroupProductId(id));
     }
 }

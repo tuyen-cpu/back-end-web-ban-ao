@@ -49,10 +49,10 @@ public class ProductService implements IProductService {
 			ProductDto result = productConverter.convertToDto(entity);
 
 			// set link img
-			List<Image> imgs = entity.getImages();
-			if (imgs != null && imgs.size() > 0) {
-				result.setUrlImg(imgs.get(0).getLink());
-			}
+//			List<Image> imgs = entity.getImages();
+//			if (imgs != null && imgs.size() > 0) {
+//				result.setUrlImg(imgs.get(0).getLink());
+//			}
 
 			result.setQuantity(entity.getQuantity());
 			results.add(result);
@@ -77,6 +77,11 @@ public class ProductService implements IProductService {
 				.orElseThrow(() -> new ProductNotFoundException("Product by id = " + id + " was not found"));
 		
 		return productConverter.convertToDetailProductDto(product); 
+	}
+
+	@Override
+	public ProductDto getProductById(Long id) {
+		return productConverter.convertToDto(productRepo.getById(id));
 	}
 
 	@Override
@@ -105,15 +110,15 @@ public class ProductService implements IProductService {
 		return productRepo.getQuantityProductByProductId(id);
 	}
 
-	@Override
-	public Long getOutputPriceProductById(Long id) {
-		return productRepo.getOutputPriceProductByProductId(id);
-	}
-
-	@Override
-	public String getLongDescription(Long id) {
-		return productRepo.getLongDescriptionById(id);
-	}
+//	@Override
+//	public Long getOutputPriceProductById(Long id) {
+//		return productRepo.getOutputPriceProductByProductId(id);
+//	}
+//
+//	@Override
+//	public String getLongDescription(Long id) {
+//		return productRepo.getLongDescriptionById(id);
+//	}
 
 	@Override
 	public void updateProduct(ProductAddDto productAddDto) {
@@ -124,6 +129,21 @@ public class ProductService implements IProductService {
 	@Override
 	public List<ProductDto> test() {
 		return productRepo.findAll().stream().map(productEntity->productConverter.convertToDto(productEntity)).collect(Collectors.toList());
+	}
+
+	@Override
+	public boolean existsByGroupProductIdAndSizeId(Long groupProductId, Long sizeId) {
+		return productRepo.existsByGroupProductIdAndSizeId(groupProductId, sizeId);
+	}
+
+	@Override
+	public boolean existsById(Long id) {
+		return productRepo.existsById(id);
+	}
+
+	@Override
+	public List<ProductDto> getByGroupProductId(Long id) {
+		return productRepo.findByGroupProductId(id).stream().map(entity->productConverter.convertToDto(entity)).collect(Collectors.toList());
 	}
 
 

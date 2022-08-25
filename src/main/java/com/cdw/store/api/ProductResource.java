@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 import com.cdw.store.dto.ProductAddDto;
 import com.cdw.store.model.Filter;
 import com.cdw.store.model.QueryOperator;
+import com.cdw.store.model.ResponseObject;
 import com.cdw.store.repo.ProductRepo;
 import com.cdw.store.repo.specs.ProductSpecification;
 import com.cdw.store.utils.ProductConverter;
@@ -45,9 +46,16 @@ ProductConverter productConverter;
 		List<ProductDto> products = productService.searchProducts(key);
 		return new ResponseEntity<List<ProductDto>>(products, HttpStatus.OK);
 	}
-	@GetMapping("/things")
-	public ResponseEntity getThings(@RequestParam("filter") String[] filters) {
-		return ResponseEntity.ok(filters);
+	@GetMapping("/group-product/{id}")
+	public ResponseEntity<ResponseObject> getByGroupProductId(@PathVariable("id") Long id) {
+try{
+	List<ProductDto> results = productService.getByGroupProductId(id);
+	return new ResponseEntity<>(new ResponseObject("ok","Get product of group product id:"+id+" success!",results),HttpStatus.OK);
+
+}catch (Exception e){
+	return new ResponseEntity<>(new ResponseObject("ok",e.getMessage(),""),HttpStatus.OK);
+}
+
 	}
 	@GetMapping("/all")
 	public ResponseEntity<Map<String, Object>> searchProducts(@RequestParam(required = false) String q,
@@ -91,11 +99,11 @@ ProductConverter productConverter;
 	}
 
 	
-	@GetMapping("/{id}/price")
-	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
-		Long price = productService.getOutputPriceProductById(id); //include: price-discount
-		return new ResponseEntity<Long>(price, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/price")
+//	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
+//		Long price = productService.getOutputPriceProductById(id); //include: price-discount
+//		return new ResponseEntity<Long>(price, HttpStatus.OK);
+//	}
 	
 	private String convertWithoutUnderStoke(String str){
 		return str.split("_")[0];
@@ -144,17 +152,35 @@ ProductConverter productConverter;
 	}
 
 	@PostMapping("/add")
-	public ResponseEntity<ProductDto> addProduct(@RequestBody ProductAddDto productAddDto){
+	public ResponseEntity<ResponseObject> addProduct(@RequestBody ProductAddDto productAddDto){
 
-		ProductDto newProduct = productService.addProduct(productAddDto);
+		if(!productService.existsByGroupProductIdAndSizeId(productAddDto.getGroupProductId(),productAddDto.getSizeId())){
+			ProductDto newProduct = productService.addProduct(productAddDto);
+			return new ResponseEntity<>(new ResponseObject("ok","Add product success!",newProduct),HttpStatus.OK);
+		}else{
+			return new ResponseEntity<>(new ResponseObject("failed","Duplicate size!",""),HttpStatus.BAD_REQUEST);
+		}
 
-		return new ResponseEntity<ProductDto>(newProduct, HttpStatus.CREATED);
 	}
 
 	@PutMapping("/update")
-	public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductAddDto productAddDto){
-		 ProductDto product= productService.addProduct(productAddDto);
-		return new ResponseEntity<>(product, HttpStatus.OK);
+	public ResponseEntity<ResponseObject> updateProduct(@RequestBody ProductAddDto productAddDto){
+
+			ProductDto productDto=productService.getProductById(productAddDto.getId());
+			if(Objects.equals(productDto.getGroupProductId(), productAddDto.getGroupProductId()) && Objects.equals(productDto.getSizeId(), productAddDto.getSizeId())){
+				ProductDto product= productService.addProduct(productAddDto);
+				return new ResponseEntity<>(new ResponseObject("ok","Add product success!",product),HttpStatus.OK);
+
+			}else if(productService.existsByGroupProductIdAndSizeId(productAddDto.getGroupProductId(),productAddDto.getSizeId())){
+				return new ResponseEntity<>(new ResponseObject("failed","Duplicate size!",""),HttpStatus.BAD_REQUEST);
+
+			}
+			else{
+				ProductDto product= productService.addProduct(productAddDto);
+				return new ResponseEntity<>(new ResponseObject("ok","Add product success!",product),HttpStatus.OK);
+
+			}
+
 	}
 
 	@DeleteMapping("/delete/{id}")
@@ -169,11 +195,12 @@ ProductConverter productConverter;
 		Long quantity = productService.getQuantityProductByProductId(id);
 		return new ResponseEntity<Long>(quantity, HttpStatus.OK);
 	}
-	@GetMapping("/{id}/description")
-	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
-		String desc = productService.getLongDescription(id);
-		return new ResponseEntity<String>(desc, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/description")
+//	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
+//		String desc = productService.getLongDescription(id);
+//		return new ResponseEntity<String>(desc, HttpStatus.OK);
+//	}
+
 
 
 
