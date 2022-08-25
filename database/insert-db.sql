@@ -16,10 +16,6 @@ INSERT INTO `size` VALUES (1,'S'),(2,'M'),(3,'L'),(4,'XL'),(5,'XXL');
 -- category
 INSERT INTO `category` VALUES (1,'Áo thun','Active'),(2,'Ao sơ mi','Active'),(3,'Áo hoodie','Active'),(4,'Áo polo','Active'),(5,'Áo khoác','Active'),(6,'Áo blazer','Active');
 
-<<<<<<< HEAD
--- group-product
-INSERT INTO `group_product` VALUES (1,'DirtyCoins Save The Earth T-shirt - Black'),(2,'Dico Junior Print T-shirt - White'),(3,'DirtyCoins Retro T-Shirt'),(4,'Dico B&F Print T-shirt - White'),(5,'Dico Mate World T-shirt - White')
-=======
+
 --group-product
 INSERT INTO `group_product` VALUES (1,'Mô tả sp 1',10,'DirtyCoins Save The Earth T-shirt - Black',200000,1,1),(2,'Mô tả sp 2',10,'Dico Junior Print T-shirt - White',350000,1,1),(3,'Mô tả sp 3',10,'DirtyCoins Retro T-Shirt',400000,1,1),(4,'Mô tả sp 4',10,'Dico B&F Print T-shirt - White',250000,1,1),(5,'Mô tả sp 5',10,'Dico Mate World T-shirt - White',400000,1,1)
->>>>>>> c5fa0a36e294bffa93cf559849b6c237be773d9a
