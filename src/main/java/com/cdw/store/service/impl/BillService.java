@@ -81,7 +81,7 @@ public class BillService implements IBillService {
 		if (address.isPresent()) {
 			bill.setAddress(address.get());
 		}
-
+bill.setPayMethod(checkoutDto.getPayMethod());
 		bill.setShippingCost(checkoutDto.getShipCost());
 		bill.setNote(checkoutDto.getNote());
 		bill.setStatus(0);// đang giao

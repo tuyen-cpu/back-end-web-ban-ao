@@ -36,6 +36,7 @@ public class Bill {
 	@Column(name = "shipping_cost")
 	private Long shippingCost;
 	private Long total;
+	private String payMethod;
 	private Integer status; // 0: dang giao, 1:da giao, 2:huy
 	@Column(name = "created_date")
 	private Date createdDate;
