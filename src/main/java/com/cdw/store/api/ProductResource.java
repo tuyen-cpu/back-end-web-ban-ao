@@ -46,9 +46,16 @@ ProductConverter productConverter;
 		List<ProductDto> products = productService.searchProducts(key);
 		return new ResponseEntity<List<ProductDto>>(products, HttpStatus.OK);
 	}
-	@GetMapping("/things")
-	public ResponseEntity getThings(@RequestParam("filter") String[] filters) {
-		return ResponseEntity.ok(filters);
+	@GetMapping("/group-product/{id}")
+	public ResponseEntity<ResponseObject> getByGroupProductId(@PathVariable("id") Long id) {
+try{
+	List<ProductDto> results = productService.getByGroupProductId(id);
+	return new ResponseEntity<>(new ResponseObject("ok","Get product of group product id:"+id+" success!",results),HttpStatus.OK);
+
+}catch (Exception e){
+	return new ResponseEntity<>(new ResponseObject("ok",e.getMessage(),""),HttpStatus.OK);
+}
+
 	}
 	@GetMapping("/all")
 	public ResponseEntity<Map<String, Object>> searchProducts(@RequestParam(required = false) String q,
@@ -92,11 +99,11 @@ ProductConverter productConverter;
 	}
 
 	
-	@GetMapping("/{id}/price")
-	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
-		Long price = productService.getOutputPriceProductById(id); //include: price-discount
-		return new ResponseEntity<Long>(price, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/price")
+//	public ResponseEntity<Long> getOutputPriceProductById(@PathVariable("id") Long id){
+//		Long price = productService.getOutputPriceProductById(id); //include: price-discount
+//		return new ResponseEntity<Long>(price, HttpStatus.OK);
+//	}
 	
 	private String convertWithoutUnderStoke(String str){
 		return str.split("_")[0];
@@ -188,11 +195,11 @@ ProductConverter productConverter;
 		Long quantity = productService.getQuantityProductByProductId(id);
 		return new ResponseEntity<Long>(quantity, HttpStatus.OK);
 	}
-	@GetMapping("/{id}/description")
-	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
-		String desc = productService.getLongDescription(id);
-		return new ResponseEntity<String>(desc, HttpStatus.OK);
-	}
+//	@GetMapping("/{id}/description")
+//	public ResponseEntity<String> getLongDescription(@PathVariable("id") Long id){
+//		String desc = productService.getLongDescription(id);
+//		return new ResponseEntity<String>(desc, HttpStatus.OK);
+//	}
 
 
 

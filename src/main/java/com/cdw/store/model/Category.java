@@ -35,7 +35,7 @@ public class Category {
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-	private List<Product> product =new ArrayList<>();
+	private List<GroupProduct> groupProducts =new ArrayList<>();
 	
 	@Override
 	public boolean equals(Object o) {

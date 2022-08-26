@@ -134,17 +134,12 @@ public class BillService implements IBillService {
 		
 		List<OrderDetailDto> orderDetailDtos = bill.getOrderDetails().stream().map((item) -> {
 			OrderDetailDto detailDto = new OrderDetailDto();
-			detailDto.setId(item.getId());
+			detailDto.setId(item.getProductDetail().getId());
 			detailDto.setName(item.getProductDetail().getGroupProduct().getName());
 			detailDto.setPrice(item.getPrice());
 			detailDto.setQuantity(item.getQuantity());
 			
-			Image img = imageRepo.findTopByProductId(item.getId());
-			if(img!=null) {
-				detailDto.setImg(img.getLink());
-			}else {
-				detailDto.setImg("image.jpg");
-			}
+			detailDto.setImg(item.getProductDetail().getGroupProduct().getImages().get(0).getLink());
 			return detailDto;
 		}).collect(Collectors.toList());
 		dto.setOrderDetails(orderDetailDtos);

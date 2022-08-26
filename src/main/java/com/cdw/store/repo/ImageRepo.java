@@ -12,9 +12,9 @@ import java.util.List;
 
 @Repository
 public interface ImageRepo extends JpaRepository<Image, Long>{
-    @Query("Select distinct i from Image i  where i.product.id=:id")
-    List<Image> findImageByProductId(Long id);
+//    @Query("Select distinct i from Image i  where i.product.id=:id")
+    List<Image> findImageByGroupProductId(Long id);
 
-	Image findTopByProductId(Long id);
+	Image findTopByGroupProductId(Long id);
 
 }

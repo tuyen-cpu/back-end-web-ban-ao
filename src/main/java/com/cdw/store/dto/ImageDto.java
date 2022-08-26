@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class ImageDto {
 	private Long id;
 	private String link;
-	private Long productId;
+	private Long groupProductId;
 }

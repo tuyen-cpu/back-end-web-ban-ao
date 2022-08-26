@@ -29,9 +29,9 @@ public class Image {
 	private String link;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "product_id")
+	@JoinColumn(name = "group_product_id")
 	@JsonIgnore
-	private Product product;
+	private GroupProduct groupProduct;
 
 	@Override
 	public boolean equals(Object o) {
