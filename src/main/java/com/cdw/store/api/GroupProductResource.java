@@ -58,7 +58,6 @@ public class GroupProductResource {
     @PostMapping("add")
     public ResponseEntity<ResponseObject> addGroupProduct(@RequestBody GroupProductDto groupProductDto) {
       try{
-          System.out.println("vào đay");
           GroupProductDto result = groupProductService.addGroupProduct(groupProductDto);
           return new ResponseEntity<ResponseObject>(new ResponseObject("ok","Add group product success!",result), HttpStatus.OK);
 

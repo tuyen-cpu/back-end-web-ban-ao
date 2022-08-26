@@ -19,4 +19,5 @@ public class CategoryConverter {
 	public Category convertToEntity(CategoryDto dto){
         return modelMapper.map(dto, Category.class);
     }
+
 }

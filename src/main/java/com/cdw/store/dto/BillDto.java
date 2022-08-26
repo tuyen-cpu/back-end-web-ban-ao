@@ -13,6 +13,7 @@ public class BillDto {
 	private Long id;
 	private Long shippingCost;
 	private Long total;
+	private String payMethod;
 	private Integer status; // 0: dang giao, 1:da giao, 2:huy
 	private Date createdDate;
 	private Date updatedDate;

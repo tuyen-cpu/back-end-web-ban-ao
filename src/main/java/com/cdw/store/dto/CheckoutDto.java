@@ -14,6 +14,7 @@ public class CheckoutDto {
 	private AddressDto address;
 	private List<String> voucherCodes = new ArrayList<String>();
 	private Long shipCost;
+	private String payMethod;
 	private List<OrderDetailDto> cart = new ArrayList<OrderDetailDto>();
 	private Long userId;
 	private Long total;

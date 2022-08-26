@@ -62,6 +62,9 @@ public class User {
 	@OneToMany(mappedBy = "userResponse", cascade = CascadeType.ALL)
 	private List<Response> responses = new ArrayList<>();
 
+	@JsonIgnore
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	private List<Bulletin> bulletins =new ArrayList<>();
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
