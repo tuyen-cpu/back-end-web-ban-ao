@@ -1,58 +1,103 @@
-INSERT INTO group_product VALUES (1,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY RAGLAN HOODIE - WHITE',699000,1,3);
-INSERT INTO group_product VALUES (2,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY RAGLAN HOODIE - MULTICOLOR',720000,1,3);
-INSERT INTO group_product VALUES (3,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP CHOPPER HOODIE - BLACK',699000,1,3);
-INSERT INTO group_product VALUES (4,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP BROOK HOODIE - BLUE',699000,1,3);
-INSERT INTO group_product VALUES (5,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP NAMI SWEATSHIRT - WHITE',590000,1,3);
-INSERT INTO group_product VALUES (6,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DC X OP ROBIN SWEATSHIRT - BLACK',590000,1,3);
-INSERT INTO group_product VALUES (7,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP CHOPPER RAGLAN SWEATSHIRT - WHITE',590000,1,3);
-INSERT INTO group_product VALUES (8,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP GEAR 4 T-SHIRT - WHITE',450000,1,1);
-INSERT INTO group_product VALUES (9,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY OVER PRINT T-SHIRT - WHITE',450000,1,1);
-INSERT INTO group_product VALUES (10,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY ATTACK T-SHIRT - WHITE',420000,1,1);
-INSERT INTO group_product VALUES (11,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP ZORO T-SHIRT - WHITE',420000,1,1);
-INSERT INTO group_product VALUES (12,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP SANJI T-SHIRT - WHITE',420000,1,1);
-INSERT INTO group_product VALUES (13,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP USOPP T-SHIRT - BLACK',420000,1,1);
-INSERT INTO group_product VALUES (14,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP BROOK T-SHIRT - BLACK',420000,1,1);
-INSERT INTO group_product VALUES (15,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP STRAW HAT T-SHIRT - WHITE',390000,1,1);
-INSERT INTO group_product VALUES (16,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LOGO T-SHIRT - BLACK',390000,1,1);
-INSERT INTO group_product VALUES (17,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DC X OP LOGO T-SHIRT - WHITE',390000,1,1);
-INSERT INTO group_product VALUES (18,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS FUKYBA GANG T-SHIRT - WHITE',420000,1,1);
-INSERT INTO group_product VALUES (19,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DICO STAR WIRE T-SHIRT - BLACK',390000,1,1);
-INSERT INTO group_product VALUES (20,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO STAR FIRE T-SHIRT - WHITE',390000,1,1);
-INSERT INTO group_product VALUES (21,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO COMFY POLO - BLACK',450000,1,1);
-INSERT INTO group_product VALUES (22,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO MULTICOLOR TYPO T-SHIRT - CREAM',420000,1,1);
-INSERT INTO group_product VALUES (23,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPECIAL LETTERS MONOGRAM HOODIE',790000,1,3);
-INSERT INTO group_product VALUES (24,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS PRINT CARDIGAN - IVORY/GREEN',490000,1,2);
-INSERT INTO group_product VALUES (25,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS PRINT CARDIGAN - IVORY/RED',490000,1,2);
-INSERT INTO group_product VALUES (26,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS LETTERS MONOGRAM HOODIE - BLACK / GREY',650000,1,3);
-INSERT INTO group_product VALUES (27,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS CHECKERBOARD KNIT CARDIGAN - BLUE',899000,1,2);
-INSERT INTO group_product VALUES (28,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - BLACK',320000,1,1);
-INSERT INTO group_product VALUES (29,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - WHITE',320000,1,1);
-INSERT INTO group_product VALUES (30,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - GREEN',320000,1,1);
-INSERT INTO group_product VALUES (31,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',20,'DICO STAR BASIC T-SHIRT - BLUE',320000,1,1);
-INSERT INTO group_product VALUES (32,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO STAR BASIC T-SHIRT - CREAM',320000,1,1);
-INSERT INTO group_product VALUES (33,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',30,'DICO STAR BASIC T-SHIRT - GREY',320000,1,1);
-INSERT INTO group_product VALUES (34,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',40,'DICO STAR BASIC T-SHIRT - RED',320000,1,1);
-INSERT INTO group_product VALUES (35,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPLASH PAINT T-SHIRT - WHITE',420000,1,1);
-INSERT INTO group_product VALUES (36,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS CHECKERBOARD KNIT CARDIGAN - BLACK',899000,1,2);
-INSERT INTO group_product VALUES (37,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DirtyCoins Star Logo Hoodie  - Black',455000,1,3);
-INSERT INTO group_product VALUES (38,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS TWISTED LOGO T-SHIRT',450000,1,1);
-INSERT INTO group_product VALUES (39,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS WAVY LOGO T-SHIRT - WHITE',315000,1,1);
-INSERT INTO group_product VALUES (40,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPRAY LOGO T-SHIRT - BLACK',351000,1,1);
-INSERT INTO group_product VALUES (41,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS BIG LOGO JACKET - PURPLE',520000,1,2);
-INSERT INTO group_product VALUES (42,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS BIG LOGO JACKET - SKY BLUE',520000,1,2);
-INSERT INTO group_product VALUES (43,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DICO LOVE FLANNEL JACKET - PINK',637500,1,2);
-INSERT INTO group_product VALUES (44,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS LETTERS MONOGRAM HOODIE - DARK GREEN / RED',531000,1,3);
-INSERT INTO group_product VALUES (45,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS X LILWUYN SHAKER COOKIE L/S T-SHIRT - BLUE',343000,1,3);
-INSERT INTO group_product VALUES (46,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS EMBROIDERED VARSITY JACKET - YELLOW/BLACK',474000,1,2);
-INSERT INTO group_product VALUES (47,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',30,'DIRTYCOINS GRAFFITI LONGSLEEVES - BLACK',270000,1,3);
-INSERT INTO group_product VALUES (48,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DirtyCoins x LilWuyn Camo Hoodie',620000,1,2);
-INSERT INTO group_product VALUES (49,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DirtyCoins Basic Zipped Hoodie - Blue',550000,1,2);
-INSERT INTO group_product VALUES (50,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Fukyba Knit Sweater',900000,1,2);
-INSERT INTO group_product VALUES (51,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Basic Zipped Hoodie - Black',550000,1,2);
-INSERT INTO group_product VALUES (52,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Print Cardigan - Black/Pink',490000,1,2);
-INSERT INTO group_product VALUES (53,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Monogram Vest',790000,1,2);
-INSERT INTO group_product VALUES (54,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Cookie Hoodie - Black',590000,1,2);
-INSERT INTO group_product VALUES (55,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Hoodie - Cream White',620000,1,2);
-INSERT INTO group_product VALUES (56,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Dont Test Us Hoodie - Black',720000,1,3);
-INSERT INTO group_product VALUES (57,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Star Logo Hoodie - Black',650000,1,3);
-INSERT INTO group_product VALUES (58,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'X-Green Hoodie',549000,1,3);
+INSERT INTO `webbanao`.`group_product` (`id`, `description`, `discount`, `name`, `price`, `status`, `category_id`) VALUES
+(1000,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY RAGLAN HOODIE - WHITE',699000,1,3),
+(1001,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY RAGLAN HOODIE - MULTICOLOR',720000,1,3),
+(1002,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP CHOPPER HOODIE - BLACK',699000,1,3),
+(1003,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP BROOK HOODIE - BLUE',699000,1,3),
+(1004,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP NAMI SWEATSHIRT - WHITE',590000,1,3),
+(6,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DC X OP ROBIN SWEATSHIRT - BLACK',590000,1,3),
+(7,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP CHOPPER RAGLAN SWEATSHIRT - WHITE',590000,1,3),
+(8,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP GEAR 4 T-SHIRT - WHITE',450000,1,1),
+(9,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY OVER PRINT T-SHIRT - WHITE',450000,1,1),
+(10,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LUFFY ATTACK T-SHIRT - WHITE',420000,1,1),
+(11,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP ZORO T-SHIRT - WHITE',420000,1,1),
+(12,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP SANJI T-SHIRT - WHITE',420000,1,1),
+(13,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP USOPP T-SHIRT - BLACK',420000,1,1),
+(14,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP BROOK T-SHIRT - BLACK',420000,1,1),
+(15,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP STRAW HAT T-SHIRT - WHITE',390000,1,1),
+(16,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DC X OP LOGO T-SHIRT - BLACK',390000,1,1),
+(17,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DC X OP LOGO T-SHIRT - WHITE',390000,1,1),
+(18,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS FUKYBA GANG T-SHIRT - WHITE',420000,1,1),
+(19,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DICO STAR WIRE T-SHIRT - BLACK',390000,1,1),
+(20,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO STAR FIRE T-SHIRT - WHITE',390000,1,1),
+(21,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO COMFY POLO - BLACK',450000,1,1),
+(22,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO MULTICOLOR TYPO T-SHIRT - CREAM',420000,1,1),
+(23,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPECIAL LETTERS MONOGRAM HOODIE',790000,1,3),
+(24,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS PRINT CARDIGAN - IVORY/GREEN',490000,1,2),
+(25,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS PRINT CARDIGAN - IVORY/RED',490000,1,2),
+(26,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS LETTERS MONOGRAM HOODIE - BLACK / GREY',650000,1,3),
+(27,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS CHECKERBOARD KNIT CARDIGAN - BLUE',899000,1,2),
+(28,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - BLACK',320000,1,1),
+(29,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - WHITE',320000,1,1),
+(30,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DICO STAR BASIC T-SHIRT - GREEN',320000,1,1),
+(31,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',20,'DICO STAR BASIC T-SHIRT - BLUE',320000,1,1),
+(32,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DICO STAR BASIC T-SHIRT - CREAM',320000,1,1),
+(33,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',30,'DICO STAR BASIC T-SHIRT - GREY',320000,1,1),
+(34,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',40,'DICO STAR BASIC T-SHIRT - RED',320000,1,1),
+(35,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPLASH PAINT T-SHIRT - WHITE',420000,1,1),
+(36,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS CHECKERBOARD KNIT CARDIGAN - BLACK',899000,1,2),
+(37,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DirtyCoins Star Logo Hoodie  - Black',455000,1,3),
+(38,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS TWISTED LOGO T-SHIRT',450000,1,1),
+(39,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS WAVY LOGO T-SHIRT - WHITE',315000,1,1),
+(40,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',10,'DIRTYCOINS SPRAY LOGO T-SHIRT - BLACK',351000,1,1),
+(41,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS BIG LOGO JACKET - PURPLE',520000,1,2),
+(42,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DIRTYCOINS BIG LOGO JACKET - SKY BLUE',520000,1,2),
+(43,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DICO LOVE FLANNEL JACKET - PINK',637500,1,2),
+(44,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',10,'DIRTYCOINS LETTERS MONOGRAM HOODIE - DARK GREEN / RED',531000,1,3),
+(45,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS X LILWUYN SHAKER COOKIE L/S T-SHIRT - BLUE',343000,1,3),
+(46,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DIRTYCOINS EMBROIDERED VARSITY JACKET - YELLOW/BLACK',474000,1,2),
+(47,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',30,'DIRTYCOINS GRAFFITI LONGSLEEVES - BLACK',270000,1,3),
+(48,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DirtyCoins x LilWuyn Camo Hoodie',620000,1,2),
+(49,'Chất liệu: nỉ bông. 2 túi thân áo. Hoạ tiết logo DirtyCoins áp dụng kỹ thuật in lụa. Ngực trái thêu logo DirtyCoins.',0,'DirtyCoins Basic Zipped Hoodie - Blue',550000,1,2),
+(50,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Fukyba Knit Sweater',900000,1,2),
+(51,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Basic Zipped Hoodie - Black',550000,1,2),
+(52,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Print Cardigan - Black/Pink',490000,1,2),
+(53,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Monogram Vest',790000,1,2),
+(54,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Cookie Hoodie - Black',590000,1,2),
+(55,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins x LilWuyn Hoodie - Cream White',620000,1,2),
+(56,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Dont Test Us Hoodie - Black',720000,1,3),
+(57,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'DirtyCoins Star Logo Hoodie - Black',650000,1,3),
+(58,'Chất liệu: cotton. Dây rút in chữ DirtyCoins phần nón, tùy chỉnh độ rộng. Túi kangaroo trước bụng.',0,'X-Green Hoodie',549000,1,3),
+
+(2301,'Smooth, non-itchy souffle yarn. Voluminous body and sleeves for a soft look.',10,'Áo Len Cổ Giả Sợi Souffle Nhẹ',784000,1,5555),
+(2302,'The fluffy texture ensures a soft feel that is never itchy. Rounded silhouette for a lovely style.',10,'Áo Cardigan Sợi Souffle Dệt 3D',784000,1,5555),
+(2303,'Based on customer feedback, we revised the thickness of the fabric and the fit for a sleek look that skims the lines of the body.',10,'Extra Fine Merino Áo Len Cổ Lọ',784000,1,5555),
+(2304,'Kết cấu tinh tế của 100% vải len cao cấp. Cải tiến các chi tiết trên thiết kế để cho cảm giác bền hơn.',10,'Extra Fine Merino Áo Len Cổ Tròn',784000,1,5555),
+(2305,'Hình dáng vừa vặn với cảm giác rộng rãi. Hoàn hảo cho phong cách giản dị hoặc tinh tế.',10,'Áo Len Dệt 3D Cotton Cổ Tròn',784000,1,5555),
+(2306,'Áo nỉ 100% cotton nhẹ nhàng trên da. Kết cấu vải thể hiện một hình dáng phong cách.',10,'Áo Len Dệt 3D Tay Cánh Dơi Dài',784000,1,5555),
+(2307,'Một chiếc áo cargidan mỏng nhẹ, thoáng mát, rất phù hợp để phối kiểu nhiều lớp.',10,'ÁO KHOÁC LEN CARDIGAN',784000,1,5555),
+(2308,'Smooth, non-itchy souffle yarn. Voluminous body and sleeves for a soft look.',10,'Áo Len Cổ Giả Sợi Souffle Nhẹ',784000,1,5555),
+(2309,'The fluffy texture ensures a soft feel that is never itchy. Rounded silhouette for a lovely style.',10,'Áo Cardigan Sợi Souffle Dệt 3D',784000,1,5555),
+(2310,'Based on customer feedback, we revised the thickness of the fabric and the fit for a sleek look that skims the lines of the body.',10,'Extra Fine Merino Áo Len Cổ Lọ',784000,1,5555),
+(2311,'Kết cấu tinh tế của 100% vải len cao cấp. Cải tiến các chi tiết trên thiết kế để cho cảm giác bền hơn.',10,'Extra Fine Merino Áo Len Cổ Tròn',784000,1,5555),
+(2312,'Hình dáng vừa vặn với cảm giác rộng rãi. Hoàn hảo cho phong cách giản dị hoặc tinh tế.',10,'Áo Len Dệt 3D Cotton Cổ Tròn',784000,1,5555),
+(2313,'Áo nỉ 100% cotton nhẹ nhàng trên da. Kết cấu vải thể hiện một hình dáng phong cách.',10,'Áo Len Dệt 3D Tay Cánh Dơi Dài',784000,1,5555),
+(2314,'Một chiếc áo cargidan mỏng nhẹ, thoáng mát, rất phù hợp để phối kiểu nhiều lớp.',10,'ÁO KHOÁC LEN CARDIGAN',784000,1,5555),
+(2315,'Một chiếc áo cargidan mỏng nhẹ, thoáng mát, rất phù hợp để phối kiểu nhiều lớp.',10,'ÁO KHOÁC LEN CARDIGAN',784000,1,5555),
+
+(2316,'Áo blazer form suông cơ bản, tay dài có 2 túi trước. Cổ danton',10,'Áo blazer 4 nút 2 túi trước',795000,1,5556),
+(2317,'Áo blazer oversized họa tiết caro, hai túi đính nút cài nhựa cách điệu thời trang.',10,'Áo blazer oversize caro',695000,1,5556),
+(2318,'Áo blazer form suông cơ bản',10,'Áo blazer form suông cơ bản',595000,1,5556),
+(2319,'Áo khoác blazer, hai tui mổ có nơ, bâu đan tông tay dài.',10,'Áo blazer nắp túi đính nơ',895000,1,5556),
+(2320,'Chất liệu dày dặn đẹp, bền màu. Có độ mềm rũ nhất định và không quá gây nhăn cho người sử dụng.',10,'Áo khoác blazer oversized họa tiết ca rô',797000,1,5556),
+(2321,'Áo khoác blazer trendy, tay lửng có nhún ở sườn tay.',10,'Áo blazer nhún xắn tay cách điệu',698000,1,5556),
+(2322,'Áo blazer form suông cơ bản, tay dài có 2 túi trước. Cổ danton',10,'Áo blazer 4 nút 2 túi trước',795000,1,5556),
+(2323,'Áo blazer oversized họa tiết caro, hai túi đính nút cài nhựa cách điệu thời trang.',10,'Áo blazer oversize caro',695000,1,5556),
+(2324,'Áo blazer form suông cơ bản',10,'Áo blazer form suông cơ bản',595000,1,5556),
+(2325,'Áo khoác blazer, hai tui mổ có nơ, bâu đan tông tay dài.',10,'Áo blazer nắp túi đính nơ',895000,1,5556),
+(2326,'Chất liệu dày dặn đẹp, bền màu. Có độ mềm rũ nhất định và không quá gây nhăn cho người sử dụng.',10,'Áo khoác blazer oversized họa tiết ca rô',797000,1,5556),
+(2327,'Áo khoác blazer trendy, tay lửng có nhún ở sườn tay.',10,'Áo blazer nhún xắn tay cách điệu',698000,1,5556),
+
+
+(2328,'Áo tanktop unisex là biểu tượng của sự đơn giản, là biểu tượng cho vẻ đẹp cổ điển của thời trang, đặc biệt là thời trang nam giới',10,'Áo Tanktop Ủn Ủn Meo Meo® Logo U2M2 - Black',200000,1,5557),
+(2329,'AAH Midnight Club',10,'THE BOY YOU LOVE TANKTOP',1200000,1,5557),
+(2330,'Tinh tế trên từng chi tiết mà SOMEHOW mang đến cho các bạn sự trải nghiệm đơn giản mà sang trọng.',10,'Áo Thun Tanktop Marlboro Cigarette , Chất Vải Cotton Co Giãn, 000401, SOMEHOW',200000,1,5557),
+(2331,'Áo Thun Không Tay',10,'Tank top ICON DENIM Veteran',210000,1,5557),
+(2332,'Áo Thun Không Tay',10,'Áo Thun Tanktop Cổ Đổ - 10S21TTOW005',250000,1,5557),
+(2333,'Áo Thun Không Tay',10,'Áo ZOMBIE ZB Tanktop In Black',220000,1,5557),
+(2334,'Áo Thun Không Tay',10,'Áo Ba Lỗ Chạy Nữ Adidas Rs Cup Tnk W CY5649',250000,1,5557),
+(2335,'Áo Thun Không Tay',10,'AKAMISA SLEEVELESS SHIRT. S22',290000,1,5557),
+(2336,'Áo Thun Không Tay',10,'Áo ba lỗ nam co giãn thấm hút mồ hôi chất liệu cotton siêu thoáng mát SNAZZY TANKTOP',280000,1,5557),
+(2337,'Áo Thun Không Tay',10,'Áo Ba Lỗ Tập Luyện Nữ Adidas Chill Tank CZ7879',270000,1,5557),
+(2338,'Áo Thun Không Tay',10,'TANKTOP 89 KENSTYLE',260000,1,5557),
+(2339,'Áo Thun Không Tay',10,'Áo Ba Lỗ Chạy Nữ Adidas Rfo Gpx Tank W GJ6460',250000,1,5557),
+(2340,'Áo Thun Không Tay',10,'Áo Ba Lỗ Tennis Nữ Adidas Asmc Sml Tank EA3124',240000,1,5557);
