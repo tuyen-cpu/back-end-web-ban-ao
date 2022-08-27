@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class BillInAdminDto {
 	private Long id;
 	private String fullname;
+	private Long userId;
 	private String phone;
 	private String address;
 	private Date updatedDate;

@@ -30,6 +30,11 @@ public class BulletService implements IBulletinService {
     }
 
     @Override
+    public void add(BulletinDto bulletinDto) {
+        bulletRepo.save(bulletinConverter.convertToEntity(bulletinDto));
+    }
+
+    @Override
     public void update(BulletinDto bulletinDto) {
         bulletRepo.save(bulletinConverter.convertToEntity(bulletinDto));
     }

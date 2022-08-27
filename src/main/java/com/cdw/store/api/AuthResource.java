@@ -91,7 +91,7 @@ public class AuthResource {
         Calendar cal = Calendar.getInstance();
         VoucherDto voucher = new VoucherDto();
         voucher.setTime(1);
-        voucher.setCode("chaobanmoi50");
+        voucher.setCode("new"+user.getUsername());
         voucher.setStartedDate(cal.getTime());
         cal.add(Calendar.DATE, 30);
         voucher.setEndedDate(cal.getTime());

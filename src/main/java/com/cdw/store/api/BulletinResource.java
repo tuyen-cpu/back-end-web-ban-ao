@@ -36,5 +36,16 @@ public class BulletinResource {
             return new ResponseEntity<>(new ResponseObject("ok",e.getMessage(),""), HttpStatus.BAD_REQUEST);
 
         }
+    }    @PostMapping("/add")
+    public ResponseEntity<ResponseObject> add(@RequestBody BulletinDto bulletinDto) {
+        try{
+            bulletinService.add(bulletinDto);
+            return new ResponseEntity<>(new ResponseObject("ok","Success!",""), HttpStatus.OK);
+
+        }catch (Exception e){
+            return new ResponseEntity<>(new ResponseObject("ok",e.getMessage(),""), HttpStatus.BAD_REQUEST);
+
+        }
     }
+
 }

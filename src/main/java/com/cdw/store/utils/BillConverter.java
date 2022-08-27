@@ -51,7 +51,7 @@ public class BillConverter {
 			sb.append(", ");
 			sb.append(address.getCity());
 			dto.setAddress(sb.toString());
-			
+			dto.setUserId(address.getUser().getId());
 			dto.setPhone(address.getPhone());
 			
 			if(address.getUser()!=null) {
